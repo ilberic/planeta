@@ -1,0 +1,74 @@
+.portfolio
+    padding: 52px 0 
+    &__title
+        display: block
+        text-align: center
+        color: #ffffff
+        font-size: 64px
+        font-weight: 500
+    .slider
+        margin-top: 51px
+        position: relative
+        &__img  
+
+            height: 400px
+            width: 700px
+            position: relative
+            margin: 0 auto
+            &:hover
+                .slider__img-descr
+                    opacity: 0.7    
+            &-descr
+                padding: 10px 30px 
+                display: block
+                position: absolute
+                bottom: 20px
+                width: 100%
+                text-align: center
+                background-color: rgba(0, 46, 80, 0.7)
+                color: #fff
+                font-size: 18px
+                font-weight: 700
+                opacity: 0
+                transition: 1s all
+                
+        .prev
+            position: absolute
+            height: 100px
+            top: 50%
+            transform: translateY(-50%)
+            left: -20px
+            cursor: pointer
+            transition: 0.5s all
+            opacity: 0.2
+            &:hover
+                transform: translateY(-50%) scale(1.1)
+                opacity: 0.7
+        .next
+            position: absolute
+            height: 100px
+            top: 50%
+            transform: translateY(-50%)
+            right: -20px
+            cursor: pointer
+            transition: 0.5s all
+            opacity: 0.2
+            &:hover
+                transform: translateY(-50%) scale(1.1)
+                opacity: 0.7
+    &__descr
+        color: #ffffff
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        margin-top: 30px
+        opacity: 0.5
+        a
+            color: #fff
+            font-size: 40px
+            text-decoration: underline
+            opacity: 1
+           
+
+            
+    
